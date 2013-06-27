@@ -79,32 +79,32 @@ tags: []
 
 키위마켓의 안드로이드 클라이언트 역시 수많은 오픈소스를 사용해서 만들어졌습니다. 
 
-### Actionbar Sherlock(https://github.com/JakeWharton/ActionBarSherlock)
+### Actionbar Sherlock
 액션바를 이용한 UX구성은 안드로이드앱의 표준이 되가고 있습니다. 하지만 아쉽게도 안드로이드3.0(API Level11)부터 액션바를 사용할 수 있어 2.x를 지원하는 안드로이드앱에서는 사용할 수 없습니다. 
-이 문제점을 해결하기 위해서 안드로이드 2.x에서 액션바를 사용할 수 있도록 Jake Wharton이 Actionbar Sherlock를 개발하여 오픈소스로 배포하고 있습니다. 이 외에도 Jake Wharton의 레파지토리에
+이 문제점을 해결하기 위해서 안드로이드 2.x에서 액션바를 사용할 수 있도록 Jake Wharton이 [Actionbar Sherlock](https://github.com/JakeWharton/ActionBarSherlock)를 개발하여 오픈소스로 배포하고 있습니다. 이 외에도 [Jake Wharton의 레파지토리](https://github.com/JakeWharton/)에
 가 보면 안드로이드 프로젝트에 도움이 되는 다양한 오픈소스 프로젝트들이 있으니 참고하시면 좋을 것 같습니다.
 
-### Universal Image Loader(https://github.com/nostra13/Android-Universal-Image-Loader)
-Universal Image Loader는 비동기적으로 이미지를 불러오고 이미지를 캐싱하는 등의 작업을 해주는 라이브러리입니다. 사용하기가 편리하다는 장점이 있지만 1.8.x 버전임에도 버그 이슈가 많이 리포트 되고 있어
-차기 버전에서는 Square의 Picasso(https://github.com/square/picasso) 사용을 고려하고 있습니다. 
+### Universal Image Loader
+[Universal Image Loader](https://github.com/nostra13/Android-Universal-Image-Loader)는 비동기적으로 이미지를 불러오고 이미지를 캐싱하는 등의 작업을 해주는 라이브러리입니다. 사용하기가 편리하다는 장점이 있지만 1.8.x 버전임에도 버그 이슈가 많이 리포트 되고 있어
+차기 버전에서는 [Square의 Picasso](https://github.com/square/picasso) 사용을 고려하고 있습니다. 
 
-### Jackson(http://jackson.codehaus.org/)
-여러 json 라이브러리 중에서 가장 빠르다고 하는 jackson 라이브러리를 사용하였습니다.
+### Jackson
+여러 json 라이브러리 중에서 가장 빠르다고 하는 [jackson](http://jackson.codehaus.org/) 라이브러리를 사용하였습니다.
 
-### Android Asynchronous Http Client(http://loopj.com/android-async-http/)
-loopJ의 안드로이드 비동기 HttpClient는 비동기로 웹서비스에 요청을 보낼 수 있는 오픈소스입니다. UI와 사용자 인터렉션을 담당하는 메인 스레드가 응답이 올 때까지 기다리지 않게 하기 위해서 비동기로 요청을 보내고 응답을 받는 일은 GUI프로그램에서 중요한 요소입니다.
+### Android Asynchronous Http Client
+[loopJ의 안드로이드 비동기 HttpClient](http://loopj.com/android-async-http/)는 비동기로 웹서비스에 요청을 보낼 수 있는 오픈소스입니다. UI와 사용자 인터렉션을 담당하는 메인 스레드가 응답이 올 때까지 기다리지 않게 하기 위해서 비동기로 요청을 보내고 응답을 받는 일은 GUI프로그램에서 중요한 요소입니다.
 요청 메소드를 쉽게 지정할 수 있는 점과 헤더 필드의 설정 그리고 파일 업로드와 다운로드 등이 매우 쉽고 요청을 보내기 위한 프로세스가 start-success or failed-finish 로 단일화 되어 있어 로직을 구성하기가 매무 편했습니다. 또한 오랜 기간동안 유지되어온 프로젝트라서 마음에 들었고 인스타그램과 핀터레스트에도 사용되고 있습니다.
 
-### Cruton(https://github.com/keyboardsurfer/Crouton)
-Crouton은 카테고리 검색 결과에 쓰인 라이브러리로 원하는 뷰그룹에 슬라이드 인/아웃 알림뷰를 생성해 주는 오픈소스입니다. 커스텀뷰를 지원하여 물건올리기를 할 때 진행상태를 보여줄 때도 사용할 수 있었습니다.
+### Cruton
+[Crouton](https://github.com/keyboardsurfer/Crouton)은 카테고리 검색 결과에 쓰인 라이브러리로 원하는 뷰그룹에 슬라이드 인/아웃 알림뷰를 생성해 주는 오픈소스입니다. 커스텀뷰를 지원하여 물건올리기를 할 때 진행상태를 보여줄 때도 사용할 수 있었습니다.
 
-### Pull to Refresh(https://github.com/chrisbanes/Android-PullToRefresh)
+### Pull to Refresh
 Pull to Refresh UX는 모바일앱의 more와 refresh를 처리하는 표준 UX로 받아들여지고 있습니다. 안드로이드에서 리스트뷰, 그리드뷰 그리고 스크롤뷰 등의 Pull to Refresh를 지원하는 오픈소스는 
-Chrisbane의 Pull to Refresh 라이브러리가 있습니다. 트위터와 같은 Pull to Refresh를 구현할 수 있으며 subclassing해서 쉽게 customize도 할 수 있습니다.  현재 프로젝트가 멈춘 상태이지만 적용하는데 문제가 없고 사용하기도 편했습니다. 
-반가운 소식은 액션바에 잘 어울리는 새로운 Pull to Refresh를 Chrisbane이 ActionBar-PullToRefresh(https://github.com/chrisbanes/ActionBar-PullToRefresh) 프로젝트로 진행하고 있습니다. 참고하시면 좋을 것 같습니다.
+[Chrisbane의 Pull to Refresh 라이브러리](https://github.com/chrisbanes/Android-PullToRefresh)가 있습니다. 트위터와 같은 Pull to Refresh를 구현할 수 있으며 subclassing해서 쉽게 customize도 할 수 있습니다.  현재 프로젝트가 멈춘 상태이지만 적용하는데 문제가 없고 사용하기도 편했습니다. 
+반가운 소식은 액션바에 잘 어울리는 새로운 Pull to Refresh를 [Chrisbane이 ActionBar-PullToRefresh](https://github.com/chrisbanes/ActionBar-PullToRefresh) 프로젝트로 진행하고 있습니다. 참고하시면 좋을 것 같습니다.
 
-### EventBus(https://github.com/greenrobot/EventBus)
-안드로이드의 컴포넌트간의 의존성을 줄이기 위해서 현재 버전에서는 Local Broadcast 를 사용하고 있습니다. 하지만 코드가 지저분해지는 것은 별 차이가 없어 고민하던 중에 EventBus를 알게 되었습니다. EventBus를 사용하면 컴포넌트간의 의존성을
+### EventBus
+안드로이드의 컴포넌트간의 의존성을 줄이기 위해서 현재 버전에서는 Local Broadcast 를 사용하고 있습니다. 하지만 코드가 지저분해지는 것은 별 차이가 없어 고민하던 중에 [EventBus](https://github.com/greenrobot/EventBus)를 알게 되었습니다. [EventBus](https://github.com/greenrobot/EventBus)를 사용하면 컴포넌트간의 의존성을
 줄이면서도 코드를 아주 깔끔하게 작성할 수 있어 차후 업데이트 때 적용할 예정입니다. 
 
 ### Flurry
